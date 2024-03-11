@@ -1,4 +1,4 @@
-const Airtable = require('Airtable');
+const Airtable = require('airtable');
 require('dotenv/config');
 
 const client = new Airtable({
