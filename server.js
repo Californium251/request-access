@@ -21,6 +21,7 @@ app.post('/', function (req, res) {
         res.send(e);
     }
 });
-app.listen(3007, '0.0.0.0', function () {
-    console.log('Server listening on port 3007!');
+var PORT = process.env.PORT || 3007;
+app.listen(PORT, '0.0.0.0', function () {
+    console.log("Server listening on port ".concat(PORT));
 });
