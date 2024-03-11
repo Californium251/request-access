@@ -13,9 +13,7 @@ app.use(cors(corsOptions));
 
 app.get('/', (req, res) => {
     console.log('here');
-    res.send('ok');
-
-
+    res.send('Only post here');
 });
 
 app.post('/', (req, res) => {
@@ -27,6 +25,6 @@ app.post('/', (req, res) => {
     }
 })
 
-app.listen(3001, '0.0.0.0', () => {
-    console.log('Server listening on port 3001');
+app.listen(3007, '0.0.0.0', () => {
+    console.log('Server listening on port 3007');
 })
