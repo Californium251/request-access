@@ -13,7 +13,7 @@ const createAirtableEntry = (data) => {
                 "Имя и Фамилия": data.name,
                 "Telegram": data.telegram,
                 "Emails": data.email || '',
-                "Информация о потоке": data.flow || '',
+                "Информация о потоке": data.flow.toString() || '',
                 "Где обучались": data.education || '',
             }
         }
