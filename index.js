@@ -1,4 +1,4 @@
-var Airtable = require('Airtable');
+var Airtable = require('airtable');
 require('dotenv/config');
 var client = new Airtable({
     apiKey: process.env.API_KEY,
