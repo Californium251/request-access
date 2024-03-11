@@ -17,6 +17,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
+    console.log('request received');
     const {createAirtableEntry} = require('./index');
     try {
         createAirtableEntry(req.body.data);
@@ -26,5 +27,5 @@ app.post('/', (req, res) => {
 })
 
 app.listen(3007, '0.0.0.0', () => {
-    console.log('Server listening on port 3007');
+    console.log('Server listening on port 3007!');
 })
