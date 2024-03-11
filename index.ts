@@ -15,6 +15,7 @@ const createAirtableEntry = (data) => {
                 "Emails": data.email || '',
                 "Информация о потоке": data.flow.toString() || '',
                 "Где обучались": data.education || '',
+                "ID формы": data.formId,
             }
         }
     ],(err, records) => {
