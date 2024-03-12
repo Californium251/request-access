@@ -14,6 +14,7 @@ var createAirtableEntry = function (data) {
                 "Информация о потоке": data.flow.toString() || '',
                 "Где обучались": data.education || '',
                 "ID формы": data.formId,
+                "Комментарий": data.flowInfo || '',
             }
         }
     ], function (err, records) {
